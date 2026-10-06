@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Offline Privacy &amp; Document Toolkit</string>
+    <string name="offline_badge">100% Offline &amp; Air-Gapped</string>
+    
+    <!-- Navigation Tabs -->
+    <string name="tab_exif">EXIF Stripper</string>
+    <string name="tab_pdf">PDF Toolkit</string>
+    <string name="tab_ocr">Offline OCR</string>
+    <string name="tab_security">Security</string>
+
+    <!-- EXIF Stripper -->
+    <string name="exif_title">Image Privacy &amp; EXIF Remover</string>
+    <string name="exif_desc">Remove GPS coordinates, camera specs, device model, and hidden timestamps entirely on-device.</string>
+    <string name="btn_select_image">Select Image</string>
+    <string name="btn_strip_metadata">Strip &amp; Save Clean Image</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="metadata_inspection">Metadata Inspection</string>
+    <string name="has_gps_warning">⚠️ Warning: Sensitive GPS Location detected!</string>
+    <string name="clean_success">Metadata removed successfully!</string>
+
+    <!-- PDF Toolkit -->
+    <string name="pdf_title">Air-Gapped PDF Manager</string>
+    <string name="pdf_merge_btn">Merge PDFs</string>
+    <string name="pdf_compress_btn">Compress PDF</string>
+    <string name="pdf_sanitize_btn">Sanitize (Anti-Spy)</string>
+    <string name="pdf_images_to_pdf">Images to PDF</string>
+    <string name="select_pdf_files">Select PDF Documents</string>
+
+    <!-- OCR -->
+    <string name="ocr_title">Offline Persian &amp; English OCR</string>
+    <string name="ocr_desc">Extract text locally without cloud AI APIs.</string>
+    <string name="btn_select_ocr_doc">Select Document/Photo</string>
+    <string name="btn_run_ocr">Extract Text</string>
+    <string name="ocr_lang_fas">Persian (فارسی)</string>
+    <string name="ocr_lang_eng">English</string>
+    <string name="ocr_lang_both">Persian + English</string>
+    <string name="btn_copy_text">Copy to Clipboard</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    
+    <!-- Security -->
+    <string name="security_audit_title">Privacy Architecture &amp; Audit</string>
+    <string name="security_audit_desc">Zero network sockets. The android.permission.INTERNET permission is omitted in AndroidManifest.xml, guaranteeing mathematical isolation from the internet.</string>
+</resources>

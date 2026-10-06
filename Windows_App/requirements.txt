@@ -1,0 +1,12 @@
+# Offline Privacy & Document Toolkit - Windows Requirements
+# 100% Offline - Zero Cloud Calls
+
+customtkinter>=5.2.0
+pypdf>=5.0.0
+pymupdf>=1.24.0
+pillow>=10.0.0
+pytesseract>=0.3.10
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
+darkdetect>=0.8.0
+pyinstaller>=6.0.0

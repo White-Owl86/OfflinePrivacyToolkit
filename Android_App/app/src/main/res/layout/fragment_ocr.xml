@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ocr_title"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ocr_desc"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectOcrDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="@string/btn_select_ocr_doc"
+            app:icon="@android:drawable/ic_menu_gallery" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartOcr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="@string/btn_run_ocr"
+            app:backgroundTint="#8E44AD"
+            app:icon="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgOcrLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbFas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocr_lang_fas"
+            android:textColor="@color/text_primary" />
+
+        <RadioButton
+            android:id="@+id/rbEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ocr_lang_eng"
+            android:textColor="@color/text_primary" />
+
+        <RadioButton
+            android:id="@+id/rbBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:checked="true"
+            android:text="@string/ocr_lang_both"
+            android:textColor="@color/text_primary" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etOcrResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@color/surface"
+        android:gravity="top|start"
+        android:hint="متن استخراج شده در اینجا نمایش داده می‌شود..."
+        android:padding="12dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCopyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_copy_text"
+        app:icon="@android:drawable/ic_menu_edit" />
+
+</LinearLayout>

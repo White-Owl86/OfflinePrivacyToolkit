@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">جعبه ابزار آفلاین اسناد و امنیت داده‌ها</string>
+    <string name="offline_badge">۱۰۰٪ آفلاین و بدون اینترنت</string>
+    
+    <!-- Navigation Tabs -->
+    <string name="tab_exif">حذف متاداده (EXIF)</string>
+    <string name="tab_pdf">ابزار PDF</string>
+    <string name="tab_ocr">متن‌خوان (OCR)</string>
+    <string name="tab_security">امنیت داده</string>
+
+    <!-- EXIF Stripper -->
+    <string name="exif_title">حذف متاداده و امنیت تصاویر</string>
+    <string name="exif_desc">پاکسازی کامل موقعیت مکانی (GPS)، مدل دوربین و تاریخچه دستگاه به صورت کاملاً محلی روی حافظه گوشی.</string>
+    <string name="btn_select_image">انتخاب تصویر</string>
+    <string name="btn_strip_metadata">پاکسازی و ذخیره عکس امن</string>
+    <string name="no_image_selected">هیچ تصویری انتخاب نشده است</string>
+    <string name="metadata_inspection">گزارش متاداده‌های کشف‌شده</string>
+    <string name="has_gps_warning">⚠️ هشدار امنیتی: لوکیشن و مختصات GPS در این تصویر وجود دارد!</string>
+    <string name="clean_success">متاداده‌ها و مشخصات با موفقیت پاک شدند!</string>
+
+    <!-- PDF Toolkit -->
+    <string name="pdf_title">مدیریت آفلاین PDF</string>
+    <string name="pdf_merge_btn">ادغام PDFها (Merge)</string>
+    <string name="pdf_compress_btn">فشرده‌سازی آفلاین</string>
+    <string name="pdf_sanitize_btn">تطهیر و ضدجاسوسی PDF</string>
+    <string name="pdf_images_to_pdf">تبدیل عکس به PDF</string>
+    <string name="select_pdf_files">انتخاب فایل‌های PDF</string>
+
+    <!-- OCR -->
+    <string name="ocr_title">استخراج متن آفلاین فارسی و انگلیسی</string>
+    <string name="ocr_desc">تبدیل عکس اسناد اداری به متن بدون نیاز به ارسال حتی ۱ بایت به اینترنت.</string>
+    <string name="btn_select_ocr_doc">انتخاب مدرک / عکس</string>
+    <string name="btn_run_ocr">شروع استخراج متن (OCR)</string>
+    <string name="ocr_lang_fas">فارسی</string>
+    <string name="ocr_lang_eng">English</string>
+    <string name="ocr_lang_both">فارسی + انگلیسی</string>
+    <string name="btn_copy_text">کپی در کلیپ‌بورد</string>
+    <string name="copied_to_clipboard">متن در حافظه کپی شد</string>
+    
+    <!-- Security -->
+    <string name="security_audit_title">معماری امنیت و حریم خصوصی</string>
+    <string name="security_audit_desc">دسترسی اینترنت (android.permission.INTERNET) در این برنامه وجود ندارد. سیستم‌عامل اندروید در سطح کرنل مانع هرگونه اتصال به سرورهای خارجی می‌شود.</string>
+</resources>
