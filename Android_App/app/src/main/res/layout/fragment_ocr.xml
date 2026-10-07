@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="#121212"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -11,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ocr_title"
-        android:textColor="@color/text_primary"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -20,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="@string/ocr_desc"
-        android:textColor="@color/text_secondary"
+        android:textColor="#AAAAAA"
         android:textSize="13sp" />
 
     <LinearLayout
@@ -29,24 +28,25 @@
         android:layout_marginTop="12dp"
         android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnSelectOcrDoc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="6dp"
-            android:text="@string/btn_select_ocr_doc"
-            app:icon="@android:drawable/ic_menu_gallery" />
+            android:background="#2980B9"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn_select_ocr_doc" />
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnStartOcr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="6dp"
-            android:text="@string/btn_run_ocr"
-            app:backgroundTint="#8E44AD"
-            app:icon="@android:drawable/ic_menu_search" />
+            android:background="#8E44AD"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn_run_ocr" />
     </LinearLayout>
 
     <RadioGroup
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ocr_lang_fas"
-            android:textColor="@color/text_primary" />
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/rbEng"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/ocr_lang_eng"
-            android:textColor="@color/text_primary" />
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/rbBoth"
@@ -78,7 +78,7 @@
             android:layout_marginStart="16dp"
             android:checked="true"
             android:text="@string/ocr_lang_both"
-            android:textColor="@color/text_primary" />
+            android:textColor="#FFFFFF" />
     </RadioGroup>
 
     <EditText
@@ -87,20 +87,21 @@
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:layout_weight="1"
-        android:background="@color/surface"
+        android:background="#1E1E1E"
         android:gravity="top|start"
         android:hint="متن استخراج شده در اینجا نمایش داده می‌شود..."
         android:padding="12dp"
-        android:textColor="@color/text_primary"
-        android:textColorHint="@color/text_secondary"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
         android:textSize="14sp" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnCopyText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/btn_copy_text"
-        app:icon="@android:drawable/ic_menu_edit" />
+        android:background="#34495E"
+        android:textColor="#FFFFFF"
+        android:text="@string/btn_copy_text" />
 
 </LinearLayout>

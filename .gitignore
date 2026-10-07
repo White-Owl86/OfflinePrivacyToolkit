@@ -42,6 +42,12 @@ logs/
 *.tmp
 *.bak
 
+# Build tools & release artifacts
+Android_Build_Tools/
+Release_Outputs/
+*.zip
+*.apk
+
 # OS
 .DS_Store
 Thumbs.db

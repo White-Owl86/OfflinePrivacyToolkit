@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="#121212"
     android:padding="16dp">
 
     <LinearLayout
@@ -15,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/exif_title"
-            android:textColor="@color/text_primary"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -24,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/exif_desc"
-            android:textColor="@color/text_secondary"
+            android:textColor="#AAAAAA"
             android:textSize="13sp" />
 
         <LinearLayout
@@ -33,24 +32,25 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/btnSelectImage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:text="@string/btn_select_image"
-                app:icon="@android:drawable/ic_menu_gallery" />
+                android:background="#2980B9"
+                android:textColor="#FFFFFF"
+                android:text="@string/btn_select_image" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/btnStripExif"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:text="@string/btn_strip_metadata"
-                app:backgroundTint="@color/danger"
-                app:icon="@android:drawable/ic_menu_delete" />
+                android:background="#E74C3C"
+                android:textColor="#FFFFFF"
+                android:text="@string/btn_strip_metadata" />
         </LinearLayout>
 
         <TextView
@@ -59,43 +59,35 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/no_image_selected"
-            android:textColor="@color/text_secondary"
+            android:textColor="#AAAAAA"
             android:textSize="12sp" />
 
-        <com.google.android.material.card.MaterialCardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="8dp"
-            app:strokeColor="#333333"
-            app:strokeWidth="1dp">
+            android:background="#1E1E1E"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/metadata_inspection"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMetadataDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/metadata_inspection"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvMetadataDetails"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="monospace"
-                    android:text="گزارش متاداده پس از انتخاب تصویر در اینجا ظاهر می‌شود.\nMetadata report will be shown here."
-                    android:textColor="@color/text_secondary"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:text="گزارش متاداده پس از انتخاب تصویر در اینجا ظاهر می‌شود.\nMetadata report will be shown here."
+                android:textColor="#2ECC71"
+                android:textSize="12sp" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

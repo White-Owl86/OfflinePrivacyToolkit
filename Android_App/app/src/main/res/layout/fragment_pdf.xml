@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="#121212"
     android:padding="16dp">
 
     <LinearLayout
@@ -15,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/pdf_title"
-            android:textColor="@color/text_primary"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -24,33 +23,33 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="انجام کلیه عملیات PDF به صورت ۱۰۰٪ آفلاین بر روی چیپست گوشی."
-            android:textColor="@color/text_secondary"
+            android:textColor="#AAAAAA"
             android:textSize="13sp" />
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnImagesToPdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/pdf_images_to_pdf"
-            app:backgroundTint="#2980B9"
-            app:icon="@android:drawable/ic_menu_camera" />
+            android:background="#2980B9"
+            android:textColor="#FFFFFF"
+            android:text="@string/pdf_images_to_pdf" />
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnSanitizePdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/pdf_sanitize_btn"
-            app:backgroundTint="#27AE60"
-            app:icon="@android:drawable/ic_secure" />
+            android:background="#27AE60"
+            android:textColor="#FFFFFF"
+            android:text="@string/pdf_sanitize_btn" />
 
         <TextView
             android:id="@+id/tvPdfResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textColor="@color/accent"
+            android:textColor="#2ECC71"
             android:textSize="13sp" />
 
     </LinearLayout>
